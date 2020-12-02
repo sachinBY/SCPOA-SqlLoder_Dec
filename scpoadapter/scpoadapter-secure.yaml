@@ -1,0 +1,70 @@
+mbJmsComponent:
+  queue:
+    password-secure: admin
+      
+scpo:
+  intermediateQueue:
+    password-secure: admin
+  db:
+    oracle:
+      password-secure: scpomgr
+      
+##########################################################
+#
+#         messagestore configuration   
+#
+##########################################################      
+  ms:
+    server:
+      requester:
+        https:
+          key:
+            password-secure: "changeme"
+          tls:
+            keyStore:
+              password-secure: "changeme"
+            trustStore:
+              password-secure: "changeme"
+    
+##########################################################
+#
+#         bulk notification configuration   
+#
+##########################################################      
+bulk:
+  callback:
+    password-secure:
+    azure:
+      account:
+        name: "systemteamblobstorage"
+        accountkey:
+          string-secure: "CRmi9T2wg1LHgnWHGfhOmthcKlZgA74kEiJ5Jop/R91qJ3ThqBzRc9lMTEroOoFGRVrcUfi1x+IMFQ+a7+0NhA=="
+      container:
+        name: "scpoblobparquet"
+      connection:
+        string-secure: 
+        
+##########################################################
+#
+#         canmodel service configuration   
+#
+##########################################################
+canmodel:
+  service:
+    https:
+      tls:
+        keystore:
+          password-secure: "changeme"
+          key:
+            password-secure: "changeme"
+        truststore:
+          password-secure: "changeme"       
+##########################################################
+#
+#     SQL LOADER CONFIGURATION
+#
+##########################################################
+sqlldr:
+  path: "C:/sqlloaderdata/instantclient-basic-windows.x64-19.8.0.0.0dbru/instantclient-basic-windows.x64-19.8.0.0.0dbru/instantclient_19_8/sqlldr"
+  connection:
+    string-secure: "scpomgr/scpomgr@in2npdvlnx54.dev.corp.local:1521/SCPODEV"           
