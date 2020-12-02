@@ -7,7 +7,7 @@ scpo:
     password-secure: admin
   db:
     oracle:
-      password-secure: scpomgr
+      password-secure: SCPOMGR
       
 ##########################################################
 #
