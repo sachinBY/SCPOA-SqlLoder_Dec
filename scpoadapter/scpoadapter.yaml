@@ -131,8 +131,7 @@ scpo:
   serviceInstance: "SCPO-CLUSTER"
   serviceNamedVersion: "SCPO-2020.1.0"
   ms:
-    enabled: "false"
-    #enabled: "true"
+    enabled: "true"
     server:
       requester:
         config: "HTTPS_MS_Request_Configuration"
@@ -194,15 +193,15 @@ file:
     enabled: "true"
 inbound:
   archive:
-    path: C:/scpo-2019.1.1/messageArchive/inbound
+    path: C:/scpo-2020.2.0/messageArchive/inbound
 outbound:
   archive:
-    path: C:/scpo-2019.1.1/messageArchive/outbound
+    path: C:/scpo-2020.2.0/messageArchive/outbound
 eframework:
   applicationId: jda-scpo-adapter
   errorReport:
     enabled: "true"
-    errorReportPath: C:/scpo-2020.1.0/errorReports
+    errorReportPath: C:/scpo-2020.2.0/errorReports
     title: SCPO Adapter
     htmlTemplatePath: errorReportTemplate.html
     payload:
@@ -534,7 +533,7 @@ bulk:
     store:
       host:
       type: "Local File Store"
-      path: "//IN2-1026937LT/u/SCPO"
+      path: "//MD1NPDVJCE01/Tools/u/SCPO"
   callback:
     protocol: "FILE"
     ingestion:
@@ -583,13 +582,6 @@ csv:
   fileDirectory: "C:/input"
 ###########################FCST LOAD CONFIGURATION#####
 ##1-->Monday,2-->Tuesday,....7-->Sunday
-fcst.fullload.dayofaweek: "2"
+fcst.fullload.dayofaweek: "1"
 fcst.fullload.periods: "365"
 fcst.partialload.periods: "28"
-
-
-
-
-
-  
-          
