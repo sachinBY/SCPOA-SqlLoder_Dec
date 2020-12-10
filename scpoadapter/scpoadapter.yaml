@@ -583,7 +583,7 @@ csv:
 ###########################FCST LOAD CONFIGURATION#####
 ##1-->Monday,2-->Tuesday,....7-->Sunday
 #fcst.fullload.dayofaweek: "1"
-fcst.fullload.dayofaweek: "4"
+fcst.fullload.dayofaweek: "2"
 fcst.fullload.periods: "365"
 #fcst.partialload.periods: "28"
 fcst.partialload.periods: "7"
