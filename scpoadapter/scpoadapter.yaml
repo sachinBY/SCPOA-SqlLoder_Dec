@@ -88,7 +88,7 @@ scpo:
       host: in2npdvlnx54.dev.corp.local
       port: "1521"
       #instance: sca18pd
-      instance:SCPODEV
+      instance: SCPODEV
       user: scpomgr
       max:
         idle:
