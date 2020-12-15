@@ -84,9 +84,11 @@ scpo:
       errors:
         msg: "Continuous Errors in the batch"
     oracle:
-      host: md1npdlnxdb08.dev.corp.local
+      #host: md1npdlnxdb08.dev.corp.local
+      host: in2npdvlnx54.dev.corp.local
       port: "1521"
-      instance: sca18pd
+      #instance: sca18pd
+      instance:SCPODEV
       user: SCPOMGR
       max:
         idle:
