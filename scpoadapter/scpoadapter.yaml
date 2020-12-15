@@ -89,7 +89,7 @@ scpo:
       port: "1521"
       #instance: sca18pd
       instance:SCPODEV
-      user: SCPOMGR
+      user: scpomgr
       max:
         idle:
           time:
