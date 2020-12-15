@@ -281,7 +281,8 @@ gs1:
     message: "forecast2Message"
     messageType: "forecast2"
     out:
-      message: "gs1"    
+      #message: "gs1"
+      message: "csv"
   dfutoskufcst:
     preprocessing: "true"
     message: "forecast2Message"
@@ -536,7 +537,7 @@ bulk:
     store:
       host:
       type: "Local File Store"
-      path: "//IN2-1026937LT/u/SCPO"
+      path: "//MD1NPDVJCE01.dev.corp.local/Tools/u/SCPO"
   callback:
     protocol: "FILE"
     ingestion:
