@@ -2,7 +2,8 @@
 
 MSDatabase:
   #url: "jdbc:oracle:thin:@localhost:1521:TestDB"
-  url: "jdbc:oracle:thin:@md1npdlnxdb08:1521:sca18pd"
+  #url: "jdbc:oracle:thin:@md1npdlnxdb08:1521:sca18pd"
+  url: "jdbc:oracle:thin:@in2npdvlnx54.dev.corp.local:1521:SCPODEV"
   driverClassName: "oracle.jdbc.driver.OracleDriver"
    
         
