@@ -1,8 +1,10 @@
 MSDatabase:
   #user-secure: "testUser"
   #password-secure: "testPasssword"
-  user-secure: "MSGSTORE_USR01"
-  password-secure: "MSGSTORE_USR01"
+  #user-secure: "MSGSTORE_USR01"
+  #password-secure: "MSGSTORE_USR01"
+  user-secure: "scpomgr"
+  password-secure: "scpomgr"
 
 
 server:
