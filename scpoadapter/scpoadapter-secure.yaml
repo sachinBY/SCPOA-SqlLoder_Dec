@@ -35,14 +35,10 @@ bulk:
   callback:
     password-secure:
     azure:
-      account:
-        name: "systemteamblobstorage"
-        accountkey:
-          string-secure: "CRmi9T2wg1LHgnWHGfhOmthcKlZgA74kEiJ5Jop/R91qJ3ThqBzRc9lMTEroOoFGRVrcUfi1x+IMFQ+a7+0NhA=="
       container:
-        name: "scpoblobparquet"
+        name:
       connection:
-        string-secure: 
+        string-secure:
         
 ##########################################################
 #
@@ -58,15 +54,4 @@ canmodel:
           key:
             password-secure: "changeme"
         truststore:
-          password-secure: "changeme"       
-##########################################################
-#
-#     SQL LOADER CONFIGURATION
-#
-##########################################################
-sqlldr:
-  #path: "C:/sqlloaderdata/instantclient-basic-windows.x64-19.8.0.0.0dbru/instantclient-basic-windows.x64-19.8.0.0.0dbru/instantclient_19_8/sqlldr"
-  path: "C:/oracle/product/18c3/bin/sqlldr"
-  connection:
-    #string-secure: "SCPOMGR/SCPOMGR@md1npdlnxdb08.dev.corp.local:1521/sca18pd"  
-    string-secure: "scpomgr/scpomgr@in2npdvlnx54.dev.corp.local:1521/SCPODEV"           
+          password-secure: "changeme"        
