@@ -62,7 +62,7 @@ scpo:
 #
 ##########################################################
   cds:
-    enabled: true
+    enabled: false
         
 ##########################################################
 #
@@ -129,11 +129,11 @@ scpo:
   serviceInstance: "SCPO-CLUSTER"
   serviceNamedVersion: "SCPO-2020.1.0"
   ms:
-    enabled: "true"
+    enabled: "false"
     server:
       requester:
-        config: "HTTPS_MS_Request_Configuration"
-        #config: "HTTP_MS_Request_Configuration"
+        #config: "HTTPS_MS_Request_Configuration"
+        config: "HTTP_MS_Request_Configuration"
         base:
           path: "/messagestore/api/v3"
         storeclientid: "client_id"
@@ -281,8 +281,7 @@ gs1:
     message: "forecast2Message"
     messageType: "forecast2"
     out:
-      #message: "gs1"
-      message: "csv"
+      message: "gs1"    
   dfutoskufcst:
     preprocessing: "true"
     message: "forecast2Message"
@@ -537,7 +536,7 @@ bulk:
     store:
       host:
       type: "Local File Store"
-      path: "//MD1NPDVJCE01.dev.corp.local/Tools/u/SCPO"
+      path: "//IN2-1026937LT/u/SCPO"
   callback:
     protocol: "FILE"
     ingestion:
@@ -579,3 +578,12 @@ canmodel:
           path: "keystore.jks"
         truststore:
           path: "truststore.jks"
+          
+########CSV DIR########################################
+csv:
+  fileDirectory: "C:/input"
+###########################FCST LOAD CONFIGURATION#####
+##1-->Monday,2-->Tuesday,....7-->Sunday
+fcst.fullload.dayofaweek: "1"
+fcst.fullload.periods: "365"
+fcst.partialload.periods: "28"          
