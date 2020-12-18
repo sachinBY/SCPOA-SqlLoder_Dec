@@ -584,6 +584,6 @@ csv:
   fileDirectory: "C:/input"
 ###########################FCST LOAD CONFIGURATION#####
 ##1-->Monday,2-->Tuesday,....7-->Sunday
-fcst.fullload.dayofaweek: "5"
+fcst.fullload.dayofaweek: "6"
 fcst.fullload.periods: "365"
 fcst.partialload.periods: "5"          
