@@ -581,7 +581,7 @@ canmodel:
           
 ########CSV DIR########################################
 csv:
-  fileDirectory: "C:/input"
+  fileDirectory: "C:/inputnew"
 ###########################FCST LOAD CONFIGURATION#####
 ##1-->Monday,2-->Tuesday,....7-->Sunday
 fcst.fullload.dayofaweek: "2"
